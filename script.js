@@ -44,7 +44,7 @@ productForm.addEventListener("submit", async (e) => {
 
     try {
       // Send a POST request to add the new product to the server
-      const response = await axios.post("https://crudcrud.com/api/1d2133b455bd4f5991e29fb6893ab32e/productData", newProduct);
+      const response = await axios.post("https://crudcrud.com/api/9a329bad8bbb43e49c8ba702ac54115c/productData", newProduct);
       console.log("Product added successfully:", response.data);
 
       // Add the new product to the local products array
