@@ -96,7 +96,7 @@ function renderProductList() {
 async function deleteProduct(productId) {
   try {
     // Send a DELETE request to remove the product from the server
-    await axios.delete(`https://crudcrud.com/api/1d2133b455bd4f5991e29fb6893ab32e/productData/${productId}`);
+    await axios.delete(`https://crudcrud.com/api/9a329bad8bbb43e49c8ba702ac54115c/productData/${productId}`);
     console.log("Product deleted successfully:", productId);
 
     // Update the local products array by filtering out the deleted product
