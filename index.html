@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Seller Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Seller Dashboard</h1>
+    <form id="productForm">
+      <input type="text" placeholder="Product Name" id="productName" required>
+      <input type="number" placeholder="Price" id="productPrice" required>
+      <input type="text" placeholder="Color" id="productColor" required>
+      <input type="text" placeholder="Size" id="productSize" required>
+      <input type="number" placeholder="Quantity" id="productQuantity" required>
+      <label for="productCategory">Category:</label>
+      <select id="productCategory" required>
+        <option value="topwear">Topwear</option>
+        <option value="footwear">Footwear</option>
+        <option value="bottomwear">Bottomwear</option>
+        <option value="meanwear">Meanwear</option>
+        <option value="women">Women</option>
+      </select>
+      <input type="file" id="productImage" accept="image/*"> <!-- Add image upload input -->
+      <button type="submit">Add Product</button>
+    </form>
+    <div id="productList"></div>
+    <div id="totalValue"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+</body>
+</html>
